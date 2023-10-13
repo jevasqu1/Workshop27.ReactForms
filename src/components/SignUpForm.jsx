@@ -6,6 +6,7 @@ export default function SignUpForm() {
     const [error, setError] = useState(null);
 
     async function handleSubmit(event) {
+        
         event.preventDefault();
         try {const response = await fetch("https://fsa-jwt-practice.herokuapp.com/signup");
         const result = await response.json();
